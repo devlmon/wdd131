@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --heading-font: "Roboto Mono", monospace;
+    --paragraph-font: "Roboto", sans-serif;
+
+    --color-1: #565068;
+    --color-2: #2e2b38;
+    --color-3: #61758f;
+    --color-4: #FEFFFE;
+    --color-5: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--heading-font);
+}
+
+body {
+    margin: 0 5rem 0 5rem;
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+#course-title {
+    display: block;
+    color: var(--color-4);
+    background-color: var(--color-1);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-5);
+    align-items: center;
+    font-family: var(--paragraph-font);
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color: var(--color-4);
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--color-4);
+}
+
+main {
+    display: grid;
+    grid-template: auto 1fr / 1fr 1fr;
+    margin: 1rem 2rem 2rem 2rem;
+}
+
+main h1 {
+    grid-column: 1 / 5;
+    text-align: center;
+    margin: 0 1rem 0 1rem;
+}
+
+.card {
+    border: 0.2rem solid var(--color-3);
+    margin: 1rem;
+    padding: 2rem;
+    background-color: var(--color-4);
+}
+
+.card p,
+.card li,
+.card a {
+    color: var(--color-5);
+    padding-bottom: 0.5rem;
+}
+
+.card p {
+    display: block;
+    height: 10rem;
+    min-width: 35rem;
+}
+
+.card h2,
+.card h3 {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2.5rem;
+}
+
+.card h2 {
+    text-align: center;
+    background-color: var(--color-3);
+    color: var(--color-4);
+}
+
+.card h3 {
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-thickness: 0.3rem;
+    text-decoration-color: var(--color-3);
+    color: var(--color-5);
+}
+
+img {
+    width: auto;
+    height: 100%;
+
+}
+
+#luisphoto {
+    float: left;
+    margin-right: 1rem;
+}
+
+#venezuelaphoto {
+    float: right;
+    margin-left: 1rem;
+}
+
+footer {
+    background-color: var(--color-1);
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p,
+footer a,
+#currentyear {
+    color: var(--color-4);
+}

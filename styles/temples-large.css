@@ -1,0 +1,47 @@
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr;
+    }
+
+    .navigation {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: var(--color-5);
+        align-items: center;
+        font-family: var(--paragraph-font);
+        height: 100%;
+    }
+
+    .navigation li {
+        flex: 1 1 auto;
+        height: 100%;
+    }
+
+    .navigation a {
+        display: flex;
+        height: 100%;
+        color: var(--color-4);
+        text-decoration: none;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .navigation a:hover {
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-color: var(--color-4);
+    }
+
+    .navigation li:hover {
+        background-color: var(--color-3);
+    }
+}

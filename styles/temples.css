@@ -1,0 +1,139 @@
+:root {
+    --heading-font: "Roboto Mono", monospace;
+    --paragraph-font: "Roboto", sans-serif;
+
+    --color-1: #565068;
+    --color-2: #2e2b38;
+    --color-3: #61758f;
+    --color-4: #FEFFFE;
+    --color-5: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--heading-font);
+}
+
+body {
+    margin: 0 5rem 0 5rem;
+}
+
+p,
+.album figure figcaption,
+#currentyear {
+    font-family: var(--paragraph-font);
+}
+
+#page-title {
+    color: var(--color-4);
+    background-color: var(--color-1);
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+/* mobil view navigation ************************************/
+@media (max-width: 37.5em) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: var(--color-4);
+        position: absolute;
+        top: 0.50rem;
+        right: 5.80rem;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "X";
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style: none;
+        background-color: var(--color-5);
+    }
+
+    .navigation a {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: var(--color-4);
+    }
+
+    .navigation a:hover {
+        background-color: var(--color-3);
+        font-weight: 700;
+    }
+
+    .open a {
+        display: block;
+    }
+
+    .active::before {
+        content: "X ";
+    }
+}
+
+/*****************************************************/
+
+main {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+main h1 {
+    grid-column: 1 / 5;
+    text-align: center;
+    padding: 1.25rem 1.25rem 0.75rem;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+    padding: 0 1rem 1rem;
+}
+
+.album figure img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.album figure figcaption {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--color-1);
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p,
+footer a,
+#currentyear {
+    color: var(--color-4);
+}

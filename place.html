@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Country Page – Luis Montenegro</title>
+    <meta name="author" content="Luis Eduardo Montenegro Llamozas">
+    <meta name="description"
+        content="Luis Eduardo Montenegro Llamozas's Country Page part of the WDD 131 – Dynamic Web Fundamentals.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="page-title">Venezuela</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Picture of Madrid Temple in Spain">
+            </picture>
+        </div>
+
+        <section class="country-data box">
+            <h2>Data</h2>
+            <dl>
+                <div class="row">
+                    <dt>Capital:</dt>
+                    <dd>Caracas</dd>
+                </div>
+                <div class="row">
+                    <dt>Population:</dt>
+                    <dd>28,000,000</dd>
+                </div>
+                <div class="row">
+                    <dt>Language:</dt>
+                    <dd>Spanish</dd>
+                </div>
+                <div class="row">
+                    <dt>Currency:</dt>
+                    <dd>Bolívar (VES)</dd>
+                </div>
+                <div class="row">
+                    <dt>Continent:</dt>
+                    <dd>South America</dd>
+                </div>
+                <div class="row">
+                    <dt>Time Zone:</dt>
+                    <dd>UTC-4</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="country-weather-data box">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="Icon of the sun" id="weather">
+            <dl>
+                <div class="row">
+                    <dt>Temperature:</dt>
+                    <dd>30°C</dd>
+                </div>
+                <div class="row">
+                    <dt>Conditions:</dt>
+                    <dd>Sunny</dd>
+                </div>
+                <div class="row">
+                    <dt>Wind:</dt>
+                    <dd>5 km/h</dd>
+                </div>
+                <div class="row">
+                    <dt>Wind Chill:</dt>
+                    <dd>28°C</dd>
+                </div>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Luis Montenegro | Spain</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

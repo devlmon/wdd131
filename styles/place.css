@@ -38,12 +38,13 @@ header {
     display: block;
 }
 
-.hero picture {
+.hero {
     position: relative;
     display: inline-block;
+    width: 100%;
 }
 
-picture::after {
+.hero::after {
     content: "";
     position: absolute;
     top: 0;
@@ -83,7 +84,7 @@ picture::after {
 }
 
 /* mobil view navigation ************************************/
-@media (max-width: 37.5em) {
+@media (max-width: 40.5em) {
     #page-title {
         padding: 1rem;
         color: var(--color-5);
@@ -111,7 +112,7 @@ picture::after {
 /*****************************************************/
 
 /* large view navigation ************************************/
-@media (min-width: 37.5em) {
+@media (min-width: 40.5em) {
     header {
         border-bottom: var(--color-2) 1rem solid;
     }
@@ -119,10 +120,6 @@ picture::after {
     #page-title {
         padding: 1.25rem;
         color: var(--color-5);
-    }
-
-    body {
-        margin: 0 5rem 0 5rem;
     }
 
     footer {
@@ -136,6 +133,32 @@ picture::after {
         border-radius: 0.5rem;
         background-color: var(--color-4);
         box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    .country-data {
+        position: absolute;
+        top: 14%;
+        left: 4%;
+        background: rgba(255, 255, 255, 0.85);
+        width: 13.5rem;
+        border-radius: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+    }
+
+    .country-weather-data {
+        position: absolute;
+        top: 35%;
+        right: 4%;
+        background: rgba(255, 255, 255, 0.85);
+        width: 16rem;
+        border-radius: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+    }
+
+    main {
+        background-color: var(--color-2);
     }
 }
 

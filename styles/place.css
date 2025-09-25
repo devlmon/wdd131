@@ -22,7 +22,7 @@ h2 {
 
 h2 {
     text-align: center;
-    padding: 0;
+    padding: 0 0 1rem 0;
 }
 
 header {
@@ -79,7 +79,7 @@ header {
     margin: auto;
     fill: var(--color-1);
     width: 15%;
-    padding: 1rem 0;
+    padding: 0 0 1rem 0;
     height: auto;
 }
 

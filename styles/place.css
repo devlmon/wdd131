@@ -157,6 +157,10 @@ header {
     main {
         background-color: var(--color-2);
     }
+
+    #weather {
+        display: none;
+    }   
 }
 
 /*****************************************************/

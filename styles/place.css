@@ -2,10 +2,10 @@
     --heading-font: "Roboto Mono", monospace;
     --paragraph-font: "Roboto", sans-serif;
 
-    --color-1: #fde74c;
-    --color-2: #6c91c1;
-    --color-3: #ff6b6b;
-    --color-4: #ffffff;
+    --color-1: #ddd17d;
+    --color-2: #5e7ba3;
+    --color-3: #ff9494;
+    --color-4: rgba(255, 255, 255, 0.85);
     --color-5: #2b2d2f;
 }
 
@@ -19,6 +19,7 @@ p,
 h2 {
     font-family: var(--paragraph-font);
 }
+
 
 h2 {
     text-align: center;
@@ -86,7 +87,6 @@ header {
 @media (max-width: 40.5em) {
     #page-title {
         padding: 1rem;
-        color: var(--color-5);
     }
 
     .hero img,
@@ -118,7 +118,6 @@ header {
 
     #page-title {
         padding: 1.25rem;
-        color: var(--color-5);
     }
 
     footer {
@@ -130,7 +129,6 @@ header {
         padding: 1rem;
         border: var(--color-2) 0.25rem solid;
         border-radius: 0.5rem;
-        background-color: var(--color-4);
         box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
     }
 
@@ -138,7 +136,7 @@ header {
         position: absolute;
         top: 14%;
         left: 4%;
-        background: rgba(255, 255, 255, 0.85);
+        background: var(--color-4);
         width: 13.5rem;
         border-radius: 1rem;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -149,7 +147,7 @@ header {
         position: absolute;
         top: 35%;
         right: 4%;
-        background: rgba(255, 255, 255, 0.85);
+        background: var(--color-4);
         width: 16rem;
         border-radius: 1rem;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -167,10 +165,4 @@ footer {
     background-color: var(--color-3);
     text-align: center;
     padding: 2rem;
-}
-
-footer p,
-footer a,
-#currentyear {
-    color: var(--color-4);
 }

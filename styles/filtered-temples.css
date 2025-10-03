@@ -106,7 +106,6 @@ main h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 25px;
-    place-items: top;
     padding: 0 1rem 1rem;
 }
 

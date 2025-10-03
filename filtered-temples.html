@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Filtered Picture Album – Luis Montenegro</title>
+    <meta name="author" content="Luis Eduardo Montenegro Llamozas">
+    <meta name="description"
+        content="Luis Eduardo Montenegro Llamozas's Filtered Picture Album Page part of the WDD 131 – Dynamic Web Fundamentals.">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="page-title">Filtered Temple Album</h1>
+        <button type="button" id="menu" aria-label="Menu button"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a id="home" href="#" class="active">Home</a></li>
+                <li><a id="dateOldFilter" href="#">Old</a></li>
+                <li><a id="dateNewFilter" href="#">New</a></li>
+                <li><a id="areaLargeFilter" href="#">Large</a></li>
+                <li><a id="areaSmallFilter" href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Luis Montenegro</h2>
+        <section class="album">
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Luis Montenegro | Spain</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+:root {
+    --heading-font: "Roboto Mono", monospace;
+    --paragraph-font: "Roboto", sans-serif;
+
+    --primary-color: #97b1de;
+    --accentuation-1: #61758f;
+    --accentuation-2: #dfe3e8;
+    --accentuation-3: #0b1a33;
+    --accentuation-4: #1f293b;
+    --white: #FFF;
+    --black: #000;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+
+p,
+div,
+label,
+span {
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    color: var(--accentuation-4)
+}
+
+body {
+    background-color: var(--accentuation-2);
+}
+
+header {
+    color: var(--white);
+    background-color: var(--accentuation-1);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p,
+footer span {
+    color: var(--accentuation-3);
+}
+
+h2 {
+    margin: 2rem auto 0;
+}
+
+.review-form,
+#review-counter {
+    margin: 0 auto 2rem;
+}
+
+h2,
+.review-form,
+#review-counter {
+    padding: 1.5rem 3rem;
+    width: 80%;
+    max-width: 400px;
+}
+
+h2 {
+    display: block;
+    background-color: var(--accentuation-1);
+    color: var(--white);
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.review-form,
+#review-counter {
+    background-color: var(--primary-color);
+}
+
+.review-form fieldset {
+    border: 0;
+}
+
+.review-form label {
+    display: block;
+}
+
+#name,
+#written-review,
+#product-name,
+#installation-date {
+    display: block;
+    background-color: var(--accentuation-2);
+    color: var(--black);
+    border-radius: 6px;
+    padding: 0.50rem 1.25rem;
+    width: 98%;
+    box-sizing: border-box;
+    margin-bottom: 1.25rem;
+    appearance: none;
+}
+
+label,
+div {
+    max-width: 300px;
+}
+
+input[type="submit"] {
+    background-color: var(--accentuation-1);
+    color: var(--white);
+    font-size: 1.25rem;
+    padding: 0.50rem 1.25rem;
+    border-radius: 6px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--accentuation-3);
+    color: var(--white);
+}
+
+#installation-date,
+#product-name,
+input[type="submit"] {
+    cursor: pointer;
+}
+
+#design,
+#five-stars {
+    margin-bottom: 1.25rem;
+}
+
+div {
+    margin-bottom: 0.10rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.50rem;
+    margin-bottom: 0.75rem;
+}
+
+.bold {
+    font-weight: bold;
+    color: var(--accentuation-3);
+}

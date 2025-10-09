@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Product Review Form – Luis Montenegro</title>
+    <meta name="author" content="Luis Eduardo Montenegro Llamozas">
+    <meta name="description"
+        content="Luis Eduardo Montenegro Llamozas's Product Review Form Page part of the WDD 131 – Dynamic Web Fundamentals.">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Luis Montenegro</h1>
+    </header>
+
+    <main>
+        <h2>Product Review</h2>
+        <form action="review.html" method="get" class="review-form">
+            <fieldset>
+                <label><span class="bold">Product Name*</span>
+                    <select id="product-name" name="product-name" required>
+                        <option value="" selected disabled>Select a Product... &#9662;</option>
+                    </select>
+                </label>
+
+                <div><span class="bold">Overall Rating*</span></div>
+                <label><input id="one-star" type="radio" name="rating" value="one" required> Very Poor</label>
+                <label><input id="two-stars" type="radio" name="rating" value="two" required> Fair</label>
+                <label><input id="three-stars" type="radio" name="rating" value="three" required> Good</label>
+                <label><input id="four-stars" type="radio" name="rating" value="four" required> Very Good</label>
+                <label><input id="five-stars" type="radio" name="rating" value="five" required> Excellent</label>
+
+                <label><span class="bold">Date of Installation*</span> <input id="installation-date" type="date"
+                        name="installation-date" required></label>
+
+                <div><span class="bold">Which features did you find useful in the product? (Check all that apply)</span>
+                </div>
+                <label><input id="durability" type="checkbox" name="durability" value="yes"> Durability</label>
+                <label><input id="ease" type="checkbox" name="ease" value="yes"> Ease of Use</label>
+                <label><input id="performance" type="checkbox" name="performance" value="yes"> Performance</label>
+                <label><input id="design" type="checkbox" name="design" value="yes"> Design</label>
+
+                <label><span class="bold">Written Review (Optional)</span> <textarea id="written-review"
+                        name="written-review"></textarea></label>
+
+
+                <label><span class="bold">Your Name (Optional)</span> <input id="name" type="text" name="name"></label>
+            </fieldset>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Luis Montenegro | Spain</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,10 +1,3 @@
-// Script to add the detail of when the page was last modified to the footer.
-const today = new Date();
-
-currentyear.innerHTML = `${today.getFullYear()}`;
-
-lastModified.innerHTML = `Last modification: ${document.lastModified}`;
-
 // Script to randomly add a different fun fact every day.
 const terrariaFunFactsArray = [
     "Terraria was released on May 16, 2011, by Re-Logic.",
@@ -57,13 +50,3 @@ if (today.toLocaleDateString('en-US') != funFact.date) {
 else {
     funFact.output();
 }
-
-// Hamburger Menu
-
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
-});

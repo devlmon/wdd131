@@ -1,0 +1,35 @@
+/* Specific Stylesheet */
+
+/* Specific styles for the Home page */
+.hero img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.fun {
+    background-color: var(--accentuation-2);
+}
+
+.strengths li {
+    font-style: italic;
+    margin-bottom: 0.50rem;
+    margin-left: 2rem;
+}
+
+.review h2 {
+    text-align: center;
+}
+
+.review p {
+    margin-top: 0.75rem;
+    text-align: justify;
+}
+
+.box h2 {
+    margin-bottom: 0.75rem;
+}
+
+.hero img {
+    margin-bottom: 0.80rem;
+}

@@ -1,0 +1,138 @@
+/* General Stylesheet for all pages. */
+:root {
+    --heading-font: "Roboto Mono", monospace;
+    --paragraph-font: "Roboto", sans-serif;
+
+    --primary-color: #2A7F62;
+    --secondary-color: #03B5AA;
+    --accentuation-1: #E1EFE6;
+    --accentuation-2: #BE95C4;
+    --white: #FFF;
+    --black: #000;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+
+p,
+li,
+div,
+span {
+    font-family: var(--paragraph-font);
+}
+
+header {
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+h1 {
+    padding: 0.75rem;
+}
+
+.navigation {
+    background-color: var(--white);
+    list-style: none;
+    font-family: var(--paragraph-font);
+    height: 100%;
+}
+
+.navigation a {
+    color: var(--black);
+}
+
+footer {
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+    padding: 1.50rem;
+}
+
+#copyRight {
+    margin-top: 0.75rem;
+}
+
+body {
+    background-color: var(--accentuation-1);
+}
+
+.active::before,
+.active::after {
+    content: "-";
+}
+
+.box {
+    background-color: var(--secondary-color);
+    padding: 1.50rem;
+    border: var(--white) 0.5rem solid;
+}
+
+/* mobil view navigation ************************************/
+@media (max-width: 47.5em) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: var(--white);
+        position: absolute;
+        top: 0.85rem;
+        right: 0.80rem;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "x";
+        font-size: 1.75rem;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style: none;
+
+    }
+
+    .navigation a {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .navigation a:hover {
+        background-color: var(--color-3);
+        font-weight: 700;
+    }
+
+    .open a {
+        display: block;
+    }
+
+    .box
+    {
+        margin-bottom: 0.80rem;
+    }
+
+
+}
+
+/*****************************************************/

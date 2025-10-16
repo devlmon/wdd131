@@ -1,0 +1,46 @@
+/* General Stylesheet for all pages. */
+/* large view navigation */
+@media (min-width: 47.5em) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-rows: 1.35fr 1fr;
+        text-align: center;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .navigation li {
+        flex: 1 1 auto;
+        height: 100%;
+    }
+
+    .navigation a {
+        display: flex;
+        height: 100%;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navigation li:hover {
+        background-color: var(--secondary-color);
+    }
+
+    main {
+        width: 90%;
+        max-width: 75rem;
+        margin: 1.5rem auto;
+    }
+
+    .box {
+        margin-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,97 @@
+/* Specific Stylesheet */
+
+/* Specific styles for the Useful Links page */
+/* mobil view navigation ************************************/
+@media (max-width: 47.5em) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 0.50rem;
+        margin-top: 0.50rem;
+        margin-bottom: 0.50rem;
+    }
+}
+
+/*****************************************************/
+
+h2 a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: var(--black);
+    background-color: var(--white);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+h2 a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: scale(1.05);
+}
+
+h2 a:focus {
+    outline: 2px solid var(--white);
+    outline-offset: 2px;
+}
+
+h2 {
+    margin-bottom: 1.25rem;
+}
+
+.form {
+    background-color: var(--accentuation-2);
+}
+
+.box {
+    margin-bottom: 0;
+}
+
+.questions-form {
+    margin: 0 auto 2rem;
+}
+
+.questions-form fieldset {
+    border: 0;
+}
+
+.questions-form label {
+    display: block;
+}
+
+#email,
+#name,
+#question {
+    display: block;
+    background-color: var(--white);
+    padding: 0.50rem 1.25rem;
+    width: 80%;
+    box-sizing: border-box;
+    margin-bottom: 1.25rem;
+    appearance: none;
+    border: var(--black) 2px solid;
+}
+
+label {
+    max-width: 400px;
+}
+
+input[type="submit"] {
+    margin-top: 0.50rem;
+    background-color: var(--white);
+    font-size: 1.25rem;
+    padding: 0.50rem 1.25rem;
+    width: 80%;
+    max-width: 320px;
+    border: var(--black) 2px solid;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.bold {
+    font-weight: bold;
+}

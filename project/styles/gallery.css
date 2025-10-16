@@ -1,3 +1,6 @@
+/* Specific Stylesheet */
+
+/* Specific styles for the Gallery page */
 .album {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

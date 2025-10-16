@@ -6,7 +6,6 @@ currentyear.innerHTML = `${today.getFullYear()}`;
 lastModified.innerHTML = `Last modification: ${document.lastModified}`;
 
 // Hamburger Menu
-
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 

@@ -1,5 +1,4 @@
 // Screenshots data
-
 const screenshots = [
     {
         name: "Defeating the first boss!",
@@ -39,6 +38,7 @@ const screenshots = [
     }
 ];
 
+// Script to add images to the page.
 insertScreenshots(screenshots);
 
 function insertScreenshots(screenshotsArray) {

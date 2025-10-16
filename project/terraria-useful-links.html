@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Terraria Useful Links Page – Luis Montenegro</title>
+    <meta name="author" content="Luis Eduardo Montenegro Llamozas">
+    <meta name="description"
+        content="Luis Eduardo Montenegro Llamozas's Terraria Useful Links Page part of the WDD 131 Project">
+    <link rel="stylesheet" href="styles/general-style.css">
+    <link rel="stylesheet" href="styles/general-style-large.css">
+    <link rel="stylesheet" href="styles/useful-links.css">
+    <link rel="stylesheet" href="styles/useful-links-large.css">
+
+    <script src="scripts/general-scripts.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="page-title">Terraria Appreciation Page</h1>
+        <button type="button" id="menu" aria-label="Menu button"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="terraria-appreciation.html">Home</a></li>
+                <li><a href="terraria-gallery.html">Gallery</a></li>
+                <li><a href="#" class="active" aria-label="Go to this same page.">Useful Links</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="box" aria-label="Terraria Official Website">
+            <h2><a href="https://www.terraria.org/">Terraria Official Website</a></h2>
+            <p>This page has all the latest news about the game, plus tons of useful links for players of all levels.
+            </p>
+        </section>
+
+        <section class="box" aria-label="Terraria Steam Page">
+            <h2><a href="https://store.steampowered.com/app/105600/Terraria/">Terraria Steam Page</a></h2>
+            <p>On this page, you can purchase the full PC version of the game, the one that receives the most frequent
+                updates, and stay fully informed about every new release.
+            </p>
+        </section>
+
+        <section class="box" aria-label="Terraria Subreddit">
+            <h2><a href="https://www.reddit.com/r/Terraria/about/">Terraria Subreddit</a></h2>
+            <p>This page hosts one of the largest communities of Terraria players, people who love to share tips,
+                discuss
+                strategies, and chat about the game in general. It's always a great place to visit if you're looking to
+                meet new people or get help.
+            </p>
+        </section>
+
+        <section class="box" aria-label="Terraria Wiki">
+            <h2><a href="https://terraria.wiki.gg/">Terraria Wiki</a></h2>
+            <p>Here you'll find everything you need to know about any item, character, or enemy in the game. Whether
+                you're curious or need quick info, this is the best page to check out.
+            </p>
+        </section>
+
+        <section class="box form" aria-label="Contact Us">
+            <h2>Ask us any questions you may have.</h2>
+            <form action="thanks.html" method="get" class="questions-form">
+                <fieldset>
+                    <label><span class="bold">Your Email*</span> <input id="email" type="email" name="email"
+                            required></label>
+
+                    <label><span class="bold">Your Name (Optional)</span> <input id="name" type="text"
+                            name="name"></label>
+
+                    <label><span class="bold">Your Question*</span> <textarea id="question" name="question"
+                            required></textarea></label>
+                </fieldset>
+                <input type="submit" value="Send Your Question">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Luis Montenegro | Spain</p>
+        <p id="lastModified"></p>
+
+        <p id="copyRight">The images featured on this page are from the video game Terraria, developed by Re-Logic. All
+            copyrights and trademarks are the property of Re-Logic.</p>
+    </footer>
+</body>
+
+</html>

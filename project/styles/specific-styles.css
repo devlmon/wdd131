@@ -30,6 +30,11 @@
     margin-bottom: 0.75rem;
 }
 
-.hero img {
-    margin-bottom: 0.80rem;
+/* mobil view navigation ************************************/
+@media (max-width: 47.5em) {
+    .hero img {
+        margin-bottom: 0.80rem;
+    }
 }
+
+/*****************************************************/
